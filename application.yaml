@@ -16,8 +16,8 @@ spec:
 
   syncPolicy:
     syncOptions:
-    - CreateNamespace=true
+    - CreateNamespace=true      # to create the namaspace if not exsists
 
     automated:
-      selfHeal: true
-      prune: true
+      selfHeal: true    # no manual changes can be done
+      prune: true   # to delete the old components
